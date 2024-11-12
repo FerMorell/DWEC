@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .input-section {
+            margin-bottom: 20px;
+        }
+
+        .hidden {
+            /*Por esto desaparece el otro*/
+            display: none;
+        }
+
+        #countdown {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>¡Adivina el Número!</h1>
+
+    <div class="eleccionNum">
+        <label for="min">Mínimo : </label>
+        <input type="number" id="min" min="101" placeholder="Introduce el mínimo"><br><br>
+
+        <label for="max">Máximo : </label>
+        <input type="number" id="max" max="2999" placeholder="Introduce el máximo"><br><br>
+
+        <button onclick="jugar()">Iniciar Juego</button>
+    </div>
+
+    <div id="lugarDeJuego" class="hidden">
+        <p>Tienes 1 minuto para adivinar el número entre <span id="min-value"></span> y <span id="max-value"></span></p>
+        <label for="miEleccion">Tu adivinanza: </label>
+        <input type="number" id="miEleccion" placeholder="Introduce tu número"><br><br>
+        <button onclick="adivinar()">Adivinar</button>
+        <p id="resultado"></p>
+        <p id="countdown">Tiempo restante: <span id="tiempo"></span> segundos</p>
+    </div>
+
+
+
+</body>
+<script src="numAleatorio.js"></script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero</title>
+</head>
+<style>
+    div {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 20px;
+        border: 1px solid black;
+    }
+
+    td {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .black {
+        background-color: black;
+    }
+
+    .white {
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div>
+        <table id="tablero"></table>
+        <table id="colores"></table>
+        <!-- <table id="minas"> -->
+        <!-- <label>Filas <input type="number" id="filas"></label>
+            <label>Columnas <input type="number" id="columnas"></label>
+            <label>Minas <input type="number" id="minas"></label>
+            <input type="submit" onclick="minas()">
+        </table>  -->
+        <table id="cambiaColores"></table>
+        <button type="button" onclick="aumentar()">Aumentar</button>
+        <button type="button" onclick="disminuir()">Disminuir</button>
+
+    </div>
+</body>
+<script src="Tablero.js"></script>
+
+</html>

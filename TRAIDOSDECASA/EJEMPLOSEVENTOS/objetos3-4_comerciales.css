@@ -1,0 +1,13 @@
+div {
+  border: 1px black dotted;
+  width: 500px;
+}
+
+#mensajes {
+  height: 30px;
+  background-color: lightcyan;
+}
+
+#listado {
+  background-color: lightyellow;
+}

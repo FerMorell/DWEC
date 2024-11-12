@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar Comerciales</title>
+  <link rel="stylesheet" href="objetos3-4_comerciales.css" />
+  <script src="comerciales.js"></script>
+</head>
+
+<body>
+  <h2>Busca un comercial de tu provincia</h2>
+  <label for="txtempresa">Empresa: </label><input type="text" id="txtempresa" />
+  <br />
+  <label for="txtciudad">Ciudad: </label><input type="text" id="txtciudad" />
+  <br />
+  <input type="button" onclick="buscar();" value="Buscar" />
+  <br />
+  <div id="mensajes"></div>
+  <div id="listado"></div>
+</body>
+<script src="manejoComerciales.js"></script>
+
+</html>

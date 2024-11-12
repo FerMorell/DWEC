@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listado de direcciones</title>
+  <link rel="stylesheet" href="direcciones.css" />
+  <style>
+    /* Estilo básico para las tablas */
+    table {
+      width: 300px;
+      /* El ancho de cada tabla */
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      /* Separación entre las tablas */
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Contenedor para las tablas alineadas horizontalmente */
+    .tabla-container {
+      display: flex;
+      /* Usamos flexbox */
+      gap: 20px;
+      /* Espacio entre las tablas */
+      flex-wrap: wrap;
+      /* Permite que las tablas se ajusten cuando no hay suficiente espacio */
+      justify-content: flex-start;
+      /* Alinea las tablas hacia la izquierda */
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Selecciona las columnas que quieres ver</h2>
+  <hr />
+  <div class="controles">
+    <div id="btnusuario" class="boton">Listado de usuarios</div>
+    <div id="btnempresa" class="boton">Listado de empresas</div>
+    <div id="btnciudad" class="boton">Listado de ciudades</div>
+  </div>
+  <hr />
+  <div id="lienzo" class="tabla-container"></div>
+</body>
+<script src="direcciones_datos.js"></script>
+<script src="direcciones.js"></script>
+
+</html>
