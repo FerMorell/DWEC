@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habilidades lingüísticas</title>
+  <link rel="stylesheet" href="habilidades.css" />
+  <script src="habilidades_personales.js"></script>
+</head>
+
+<body>
+  <br />
+  <!-- Controles para la búsqueda y entradas de datos-->
+  <div id="controles">
+    <table summary="Selector de habilidades">
+      <tr>
+        <td colspan="19" class="tablecell" align="center" style="height: 40px">
+          <h2>Búsqueda de escritores por habilidades</h2>
+        </td>
+      </tr>
+      <tr>
+        <td width="20px"></td>
+        <td colspan="8" class="tableclass">Búsqueda por palabra clave</td>
+        <td width="20px" class="tablecell"></td>
+        <td colspan="5" align="center" class="tableclass">
+          <input type="text" id="findskill" />
+        </td>
+        <td><img src="seek_search_find.png" id="gofind" /></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="19" class="tablecell" align="center" style="height: 20px"></td>
+      </tr>
+      <tr>
+        <td width="50px"></td>
+        <td colspan="2" class="tableclass">
+          <div class="boton" id="reset">Reset</div>
+        </td>
+        <td width="20px" class="tablecell"></td>
+        <td colspan="2" class="tableclass">
+          <div class="boton" id="first">Primero</div>
+        </td>
+        <td width="20px" class="tablecell"></td>
+        <td colspan="2" class="tableclass">
+          <div class="boton" id="prev">Anterior</div>
+        </td>
+        <td width="20px" class="tablecell"></td>
+        <td colspan="2" class="tableclass">
+          <div class="boton" id="next">Siguiente</div>
+        </td>
+        <td width="20px" class="tablecell"></td>
+        <td colspan="2" class="tableclass">
+          <div class="boton" id="last">Último</div>
+        </td>
+        <td width="20px" class="tablecell"></td>
+        <td colspan="2" class="tableclass">
+          <div class="boton" id="auto">Automático</div>
+        </td>
+        <td width="50px"></td>
+      </tr>
+      <tr>
+        <td colspan="19" class="tablecell" align="center" style="height: 20px"></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Bloques para los mensajes y muestra de datos -->
+
+  <div id="avisos">Los fallos de uso se muestran aqui</div>
+  <div id="informacion">
+    <div>
+      <div class="fila">
+        <div class="celda" id="nescritor">##</div>
+        <div class="celda" id="nombre">Nombre del autor</div>
+      </div>
+    </div>
+    <div class="fila">
+      <div id="skill1" class="celda skill">Habilidad A</div>
+      <div id="skill2" class="celda skill">Habilidad B</div>
+      <div id="skill3" class="celda skill">Habilidad C</div>
+    </div>
+    <div id="descripcion" class="celda">
+      En este espacio verás unas breve descripción del autor
+    </div>
+  </div>
+</body>
+<script src="habilidadesFMCH.js"></script>
+
+</html>

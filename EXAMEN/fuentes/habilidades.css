@@ -1,0 +1,103 @@
+/* td {
+  border: 1px black solid;
+} */
+
+img {
+  height: 35px;
+  cursor: pointer;
+}
+
+#controles {
+  width: 700px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+}
+
+.tablecell {
+  border: none;
+  font-family: Verdana, sans-serif;
+}
+
+.tableclass {
+  border: 2px solid rgb(5, 5, 122);
+  background-color: rgb(202, 222, 241);
+  border-radius: 5px;
+  font-family: Verdana, sans-serif;
+}
+
+.boton {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  height: 25px;
+  background-color: azure;
+  color: rgb(134, 4, 4);
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+#avisos {
+  width: 700px;
+  margin-left: 0;
+  background-color: rgb(231, 180, 151);
+  color: firebrick;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#informacion {
+  width: 700px;
+  margin-left: 0;
+  background-color: deepskyblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#nombre {
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 550px;
+}
+
+#descripcion {
+  font-size: 0.9em;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.fila {
+  display: inline-flex;
+  background-color: deepskyblue;
+  padding: 3px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.celda {
+  background-color: lightcyan;
+  color: navy;
+  border-radius: 5px;
+  margin: 5px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 10px;
+}
+
+.skill {
+  margin-right: 50px;
+  width: 150px;
+}
+
+#nescritor{
+  width: 50px;
+  font-weight: bold;
+}
+
