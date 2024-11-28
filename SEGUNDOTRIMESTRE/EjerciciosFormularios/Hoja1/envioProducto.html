@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envío de un producto</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" name="miForm">
+        <label for="numberid">Id: </label> <input type="number" id="numberid" min="1000" max="2000">
+        <p></p>
+        <label for="nombre">Nombre: </label> <input type="text" id="nombre">
+        <p></p>
+        <label for="descripcion">Descripción: </label>
+        <textarea id="descripcion"></textarea>
+        <p></p>
+        <label for="contrasenia">Contraseña: </label>
+        <input type="password" id="contrasenia">
+        <p></p>
+        <label for="fecha">Fecha: </label>
+        <input type="date" id="fecha">
+
+        <p></p>
+        <select id="categoria">
+            <option selected disabled>Selecciona la Categoría</option>
+            <option value="Tenis">Tenis</option>
+            <option value="VoleyBall">VoleyBall</option>
+            <option value="Futbol">Futbol</option>
+            <option value="Baloncesto">Baloncesto</option>
+        </select>
+        <p></p>
+
+        <label for="tienda">Ikea</label> <input type="radio" name="tienda" value="Ikea" id="t1">
+        <p></p>
+        <label for="tienda">Carrefour</label> <input type="radio" name="tienda" value="Carrefour" id="t2">
+        <p></p>
+        <label for="tienda">Chinos</label> <input type="radio" name="tienda" value="Chinos" id="t3">
+        <p></p>
+        <label for="tienda">Dia</label> <input type="radio" name="tienda" value="Dia" id="t4">
+        <p></p>
+        <div id="tiendaIn"></div>
+        <!-- <label>Dirección: </label> <input type="text" id="direccion">
+        <p></p>
+        <label>Código Postal: </label> <input type="text" id="cp">
+        <p></p> -->
+        <p>Accesorios: </p>
+        <label>Casco</label> <input type="checkbox" name="Accesorios" value="casco">
+        <label>Collar</label> <input type="checkbox" name="Accesorios" value="collar">
+        <label>Crema Solar</label> <input type="checkbox" name="Accesorios" value="Crema Solar">
+        <label>Botella Agua</label> <input type="checkbox" name="Accesorios" value="Botella Agua">
+
+        <p></p>
+        <label>Color: </label> <input type="color" id="color">
+        <p></p> <label for="Correo">Correo:</label><input type="email" id="Correo">
+        <p></p> <label for="precio">Precio: </label> <input type="range" id="precio" min="10" max="100">
+        <p></p> <label>Teléfono: </label> <input type="tel" id="tel">
+        <p></p> <label for="fechaMax">Fecha de devolución: </label><input type="week" id="fechaMax">
+        <p></p>
+        <button type="button" onclick="mostrarDatos()">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+    <p></p>
+    <div id="lienzo"></div> <!-- Aquí se mostrarán los datos -->
+</body>
+<script src="envioproducto.js"></script>
+
+</html>
