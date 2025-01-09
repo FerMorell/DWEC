@@ -1,0 +1,107 @@
+/* Estilos a tener en cuenta para incluir en el código JS */
+
+table {
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.listado {
+  background-color: rgba(71, 186, 240, 0.904);
+  color: white;
+}
+
+.puntos {
+  border: 10px dotted rgb(228, 6, 35);
+}
+
+.boleto {
+  font-size: 1.1em;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: lightcyan;
+  color: blue;
+}
+
+/* Estilos que no hay que tener en cuenta para la codificación */
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+td {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: white;
+  background-color: rgb(170, 10, 10);
+  text-align: center;
+  width: 600px;
+  border-radius: 10px;
+}
+
+td.listado {
+  background-color: darkblue;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 5px;
+}
+
+.numero {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 5px;
+  background-color: lightcyan;
+  color: blue;
+  width: 40px;
+}
+
+.boton {
+  border-radius: 5px;
+  background-color: rgb(161, 26, 48);
+  box-shadow: 2px 2px rgb(78, 2, 27);
+  color: rgb(236, 229, 190);
+  width: fit-content;
+  text-align: center;
+  padding: 2px;
+  margin: 3px;
+  cursor: pointer;
+}
+
+#importe {
+  font-size: 1.5em;
+  padding-top: 10px;
+  border-radius: 5px;
+  background-color: lightcyan;
+  color: blue;
+}
+
+#provincias {
+  font-size: 1.2em;
+  padding-top: 10px;
+  border-radius: 5px;
+  background-color: lightcyan;
+  color: blue;
+}
+
+#mensajes {
+  background-color: gainsboro;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 600px;
+  font-size: 1.3em;
+  color: rgb(78, 2, 27);
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+#listadoquintos,
+#listabusqueda {
+  visibility: hidden;
+}

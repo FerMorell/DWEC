@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorteo Loteria Navidad</title>
+  <link rel="stylesheet" href="loteria.css" />
+
+</head>
+
+<body>
+  <h1>Sorteo de la Lotería de Navidad</h1>
+  <table>
+    <tr>
+      <td id="animations" class="boton">Activar animación</td>
+      <td width="200px"></td>
+      <td id="cleaner" class="boton">Borrar</td>
+    </tr>
+  </table>
+  <table class="listado">
+    <td colspan="5" class="listado">
+      Billetes premiados de la Lotería de Navidad
+    </td>
+    <tr>
+      <td>Primer premio<input type="radio" name="premio" value="1" /></td>
+      <td width="30px"></td>
+      <td>Segundo premio<input type="radio" name="premio" value="2" /></td>
+      <td width="30px"></td>
+      <td>Tercer premio<input type="radio" name="premio" value="3" /></td>
+    </tr>
+  </table>
+  <table class="listado">
+    <tr>
+      <td colspan="7" class="listado" id="tipopremio">&nbsp;</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="numero">&nbsp;</td>
+      <td class="numero">&nbsp;</td>
+      <td class="numero">&nbsp;</td>
+      <td class="numero">&nbsp;</td>
+      <td class="numero">&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="7" class="listado">Tiene un premio de</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="5" id="importe">&nbsp;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="7" class="listado">Vendido en</td>
+    </tr>
+    <tr>
+      <td colspan="7" id="provincias">&nbsp;</td>
+    </tr>
+  </table>
+  <table>
+    <td id="verquintos" class="boton">Mostrar hasta los quintos premios</td>
+  </table>
+  <div id="listadoquintos"></div>
+
+  <table class="listado">
+    <td colspan="7" class="listado">Búsqueda en la lista de premios</td>
+    <tr>
+      <td>Por número</td>
+      <td colspan="2">
+        <input type="text" placeholder="Introduce tu número" id="buscapornumero" />
+      </td>
+      <td width="20px"></td>
+      <td>Por terminación</td>
+      <td colspan="2">
+        <select id="buscaporterminacion">
+          <option value="" selected>Cifras a comprobar</option>
+          <option value="1">Última (reintegro)</option>
+          <option value="2">Dos últimas</option>
+          <option value="3">Tres últimas</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <div id="mensajes"></div>
+
+  <div id="listabusqueda"></div>
+</body>
+
+<script src="loteria_premios.js"></script>
+<script src="loteria.js"></script>
+
+</html>
