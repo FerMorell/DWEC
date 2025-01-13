@@ -84,20 +84,21 @@ function mostrarCinco() {
 
 /* Inicio de la página */
 function mostarDatos() {
-
-
+    let num;
     if (radio[0].checked) {
         console.log(1)
-        mostrarUno();
+        num = 1;
+        mostrarTodos(num);
     }
 
     if (radio[1].checked) {
         console.log(2)
-        mostrarDos();
+        num = 2;
+        mostrarTodos(num);
     }
     if (radio[2].checked) {
-
-        mostrarTres();
+        num = 3;
+        mostrarTodos(num);
         console.log(3)
     }
 
@@ -108,64 +109,58 @@ for (let i = 0; i < radio.length; i++) {
     radio[i].addEventListener('click', mostarDatos);
 
 }
-function mostrarUno() {
-    console.log("has seleccionado mostrar el primero")
-    tipoPremio.innerHTML = "Primer premio";
+function mostrarTodos(num) {
+    // console.log("has seleccionado mostrar el primero")
     let n;
     for (let i = 0; i < premios.length; i++) {
-        if (premios[i].premio === 400000) {
-            n = premios[i].numero.toString();
-            console.log(n);
-            for (let j = 0; j < numeros.length; j++) {
-                numeros[j].innerHTML = n[j];
+        if (num === 1) {
+            tipoPremio.innerHTML = "Primer premio";
+            if (premios[i].premio === 400000) {
+                n = premios[i].numero.toString();
+                console.log(n);
+                for (let j = 0; j < numeros.length; j++) {
+                    numeros[j].innerHTML = n[j];
+
+                }
+                premio.innerHTML = premios[i].premio + '€';
+                pv.innerHTML = premios[i].provincia;
 
             }
-            premio.innerHTML = premios[i].premio + '€';
-            pv.innerHTML = premios[i].provincia;
-
         }
+        if (num === 2) {
+            tipoPremio.innerHTML = "Segundo premio";
+
+            if (premios[i].premio === 125000) {
+                n = premios[i].numero.toString();
+                console.log(n);
+                for (let j = 0; j < numeros.length; j++) {
+                    numeros[j].innerHTML = n[j];
+
+                }
+                premio.innerHTML = premios[i].premio + '€';
+                pv.innerHTML = premios[i].provincia;
+
+            }
+        }
+        if (num === 3) {
+            tipoPremio.innerHTML = "Tercer premio";
+            if (premios[i].premio === 50000) {
+                n = premios[i].numero.toString();
+                console.log(n);
+                for (let j = 0; j < numeros.length; j++) {
+                    numeros[j].innerHTML = n[j];
+
+                }
+                premio.innerHTML = premios[i].premio + '€';
+                pv.innerHTML = premios[i].provincia;
+
+            }
+        }
+
     }
 
 }
 
-function mostrarDos() {
-    console.log("has seleccionado mostrar el segundo")
-    tipoPremio.innerHTML = "Segundo premio";
-    let n;
-    for (let i = 0; i < premios.length; i++) {
-        if (premios[i].premio === 125000) {
-            n = premios[i].numero.toString();
-            console.log(n);
-            for (let j = 0; j < numeros.length; j++) {
-                numeros[j].innerHTML = n[j];
-
-            }
-            premio.innerHTML = premios[i].premio + '€';
-            pv.innerHTML = premios[i].provincia;
-
-        }
-    }
-
-}
-function mostrarTres() {
-    console.log("has seleccionado mostrar el tercer")
-    tipoPremio.innerHTML = "Tercer premio";
-    let n;
-    for (let i = 0; i < premios.length; i++) {
-        if (premios[i].premio === 50000) {
-            n = premios[i].numero.toString();
-            console.log(n);
-            for (let j = 0; j < numeros.length; j++) {
-                numeros[j].innerHTML = n[j];
-
-            }
-            premio.innerHTML = premios[i].premio + '€';
-            pv.innerHTML = premios[i].provincia;
-
-        }
-    }
-
-}
 
 function ponerAnimacion() {
     if (!animacionActivada) {
