@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conciertos...Examen DWEC marzo 2024</title>
+  <link type="text/css" rel="stylesheet" href="conciertos.css" />
+  <script src="conciertosdata.js"></script>
+</head>
+
+<body>
+  <div id="controles">
+    <table>
+      <tr>
+        <td>Identificador:</td>
+        <td colspan="2"><input type="text" placeholder="99-AA-99" id="idsong" /></td>
+        <td><input type="button" value="Go!" id="find"></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2">
+          <div id="btnall" class="boton">Mostrar todos</div>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">Selecciona la BSO del concierto</td>
+      </tr>
+      <tr>
+        <td width="120px">Titanic<input type="radio" name="bso" value="T"></td>
+        <td width="120px">The Lion King<input type="radio" name="bso" value="K"></td>
+        <td width="120px">La La Land<input type="radio" name="bso" value="L"></td>
+        <td width="120px">Grease<input type="radio" name="bso" value="G"></td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <hr>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2">
+          <div id="btnorden" class="boton">Ordenar por número de conciertos</div>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div id="canvas">
+    <div id="showtable">
+    </div>
+    <div id="showdetail">
+    </div>
+  </div>
+  <script src="FMCHconciertos.js"></script>
+</body>
+
+</html>
