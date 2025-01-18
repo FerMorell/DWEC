@@ -2,7 +2,7 @@ const concierto = [];
 const dibujarTabla = document.getElementById("showtable");
 const botonMostarTodos = document.getElementById("btnall");
 // let radio = document.getElementsByClassName("bso");
-const radio = document.querySelectorAll('input[type="radio"]'); // Asegúrate de que esto esté seleccionando tus radios
+const radio = document.querySelectorAll('input[type="radio"]'); 
 const ordenar = document.getElementById("btnorden");
 let sortAscNumConciertos = true;
 const conciertosOriginales = [];
