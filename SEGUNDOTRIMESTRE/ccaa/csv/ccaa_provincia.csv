@@ -1,0 +1,53 @@
+COD_CCAA,DESC_CCAA,COD_PROVINCIA,DESC_PROVINCIA
+01,Andalucía,04,Almeria
+01,Andalucía,11,Cadiz
+01,Andalucía,14,Cordoba
+01,Andalucía,18,Granada
+01,Andalucía,21,Huelva
+01,Andalucía,23,Jaen
+01,Andalucía,29,Malaga
+01,Andalucía,41,Sevilla
+02,Aragón,22,Huesca
+02,Aragón,44,Teruel
+02,Aragón,50,Zaragoza
+03,Principado de Asturias,33,Asturias
+04,Islas Baleares,07,Baleares
+05,Islas Canarias,35,Las Palmas
+05,Islas Canarias,38,Santa Cruz De Tenerife
+06,Cantabria,39,Cantrabria
+07,Castilla y León,05,Avila
+07,Castilla y León,09,Burgos
+07,Castilla y León,24,Leon
+07,Castilla y León,34,Palencia
+07,Castilla y León,37,Salamanca
+07,Castilla y León,40,Segovia
+07,Castilla y León,42,Soria
+07,Castilla y León,47,Valladolid
+07,Castilla y León,49,Zamora
+08,Castilla-La Mancha,02,Albacete
+08,Castilla-La Mancha,13,Ciudad Real
+08,Castilla-La Mancha,16,Cuenca
+08,Castilla-La Mancha,19,Guadalajara
+08,Castilla-La Mancha,45,Toledo
+09,Cataluña,08,Barcelona
+09,Cataluña,17,Girona
+09,Cataluña,25,Lleida
+09,Cataluña,43,Tarragona
+10,Comunidad Valenciana,03,Alicante
+10,Comunidad Valenciana,12,Castellón
+10,Comunidad Valenciana,46,Valencia
+11,Extremadura,06,Badajoz
+11,Extremadura,10,Caceres
+12,Galicia,15,La Coruña
+12,Galicia,27,Lugo
+12,Galicia,32,Ourense
+12,Galicia,36,Pontevedra
+13,Madrid,28,Madrid
+14,Región de Murcia,30,Murcia
+15,Comunidad Foral de Navarra,31,Navarra
+16,País Vasco,01,Alava
+16,País Vasco,20,Guipuzcoa
+16,País Vasco,48,Vizcaya
+17,La Rioja,26,La Rioja
+18,Ceuta ,51,Ceuta
+19,Melilla,52,Melilla
