@@ -1,0 +1,24 @@
+table {
+  border: 2px solid grey;
+}
+
+td {
+  border: 1px dotted lightgray;
+}
+
+.titulo {
+  background-color: gainsboro;
+}
+
+.boton {
+  background-color: darkgray;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 3px;
+}
+
+.bar {
+  width: 200px;
+  height: 15px;
+  background-color: red;
+}

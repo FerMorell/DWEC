@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="developers.css" />
+
+    <title>Plantilla de desarrolladores</title>
+  </head>
+  <body>
+    <h1>Trabajadores del departamento de Desarrollo</h1>
+
+    <table>
+      <td colspan="6" class="titulo">
+        Filtre los empleados según sus criterios
+      </td>
+      <tr>
+        <td colspan="6" class="titulo">Por nivel de lenguaje</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>
+          <select>
+            <option value selected>Desconocido</option>
+            <option value="low">Bajo</option>
+            <option value="m">Medio</option>
+            <option value="h">Alto</option>
+            <option value="e">Experto</option>
+          </select>
+        </td>
+        <td>Php</td>
+        <td>
+          <select>
+            <option value selected>Desconocido</option>
+            <option value="low">Bajo</option>
+            <option value="m">Medio</option>
+            <option value="h">Alto</option>
+            <option value="e">Experto</option>
+          </select>
+        </td>
+        <td>SQL</td>
+        <td>
+          <select>
+            <option value selected>Desconocido</option>
+            <option value="low">Bajo</option>
+            <option value="m">Medio</option>
+            <option value="h">Alto</option>
+            <option value="e">Experto</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6" class="titulo">Por edad</td>
+      </tr>
+      <tr>
+        <td>Junior<input type="radio" name="age" value="1" /></td>
+        <td width="30px"></td>
+        <td>Senior<input type="radio" name="age" value="2" /></td>
+        <td width="30px"></td>
+        <td>Expert<input type="radio" name="age" value="3" /></td>
+      </tr>
+    </table>
+
+    <hr />
+    <table>
+      <tr>
+        <td colspan="3" class="titulo">Con los seleccionados</td>
+      </tr>
+      <tr>
+        <td class="boton">Resaltar</td>
+        <td class="boton">Borrar temporalmente</td>
+        <td class="boton">Borrar definitivamente</td>
+      </tr>
+    </table>
+    <table>
+      <thead class="titulo">
+        <td>#</td>
+        <td>Nombre</td>
+        <td>Apellidos</td>
+        <td>Java</td>
+        <td>PHP</td>
+        <td>SQL</td>
+        <td>Sede</td>
+        <td>Rank</td>
+        <td>Seleccion</td>
+      </thead>
+      <tr>
+        <td>#</td>
+        <td>Tarah</td>
+        <td>o'Carroll</td>
+        <td>bajo</td>
+        <td></td>
+        <td>alto</td>
+        <td>Jamaica</td>
+        <td><div class="bar"></div></td>
+        <td><input type="checkbox" name="chk" id="" /></td>
+      </tr>
+
+    </table>
+<script src="developers.js"></script>
+  </body>
+</html>
